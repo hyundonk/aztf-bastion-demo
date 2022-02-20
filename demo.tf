@@ -11,7 +11,7 @@ resource "random_id" "suffix" {
 }
 
 resource "azurerm_resource_group" "example" {
-  name     = "local.resource_group_name${random_id.suffix.dec}"
+  name     = "${local.resource_group_name}${random_id.suffix.dec}"
   location = local.location
 }
 

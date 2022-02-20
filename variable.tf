@@ -13,5 +13,3 @@ variable "admin_password" {}
 variable "custom_data" {}
 
 variable "webserver" {}
-
-variable "nsg_rule_table" {}
